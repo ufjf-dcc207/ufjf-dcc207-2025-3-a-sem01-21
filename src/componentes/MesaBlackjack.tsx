@@ -1,3 +1,4 @@
+import "./MesaBlackjack.css"
 
 function MesaBlackjack() {
     return (
