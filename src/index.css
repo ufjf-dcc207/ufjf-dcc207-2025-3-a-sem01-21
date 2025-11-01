@@ -12,6 +12,18 @@ body {
   padding: 20px;
 }
 
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.h2 {
+  color: gold;
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-shadow: 2px, 2px, 2px rgba(0, 0, 0, 0.5);
+}
+
 .mesa-blackjack {
   max-width: 800px;
   margin: 0 auto;

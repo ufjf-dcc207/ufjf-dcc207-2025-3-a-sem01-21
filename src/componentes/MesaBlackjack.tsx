@@ -5,7 +5,7 @@ function MesaBlackjack() {
 
     const cartasDealer = [
         {naipe: 'Copas', valor: 'A'},
-        {naipe: 'Espadas', valor: 'K'}
+        {naipe: 'Espadas', valor: '8'}
     ];
     
     const cartasJogador = [

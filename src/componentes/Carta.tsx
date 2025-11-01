@@ -16,13 +16,14 @@ function Carta({naipe, valor, face_para_cima = true}: CartaPadrao) {
     return (
         <div className={"carta carta-" + naipe}>
 
-            <div className="valor-carta">{valor}</div>
+            <div className="valor-carta valor-superior">{valor}</div>
             <div className="naipe-carta">
                 {naipe === 'Paus' && '♣'}
                 {naipe === 'Espada' && '♠'}
                 {naipe === 'Ouros' && '♦'}
                 {naipe === 'Copas' && '♥'}
             </div>
+            <div className="valor-carta valor-inferior">{valor}</div>
         </div>
     )
 }
