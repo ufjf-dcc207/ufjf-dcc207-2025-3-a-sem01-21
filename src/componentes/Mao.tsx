@@ -2,11 +2,13 @@ import Carta from "./Carta";
 
 interface MaoPadrao {
     cartas: Array<{naipe: string; valor: string}>;
+    titulo: string;
 }
 
-export default function Mao({cartas}: MaoPadrao) {
+export default function Mao({cartas, titulo}: MaoPadrao) {
     return (
         <div className="mao">
+            <h3>{titulo}</h3>
             <div className="cartas">
                 {cartas.map((carta, posicao) => (
                     <Carta
