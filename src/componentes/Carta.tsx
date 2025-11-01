@@ -4,7 +4,7 @@
 // As pode valer 1 ou 11
 
 interface CartaPadrao {
-    naipe: 'Paus' | 'Espada' | 'Ouros' | 'Copas'
+    naipe: string;
     valor: string; // As, rei, rainha, valete e números
     face_para_cima?: boolean;
 }
@@ -14,7 +14,6 @@ function Carta({naipe, valor, face_para_cima = true}: CartaPadrao) {
         return <div className="carta para-baixo">verso da carta</div>;
 
     return (
-        // <div className={`carta carta-${naipe}`}>
         <div className={"carta carta-" + naipe}>
 
             <div className="valor-carta">{valor}</div>
