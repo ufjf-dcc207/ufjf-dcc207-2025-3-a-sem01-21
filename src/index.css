@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(#1e5a1e, #2d7a2d);
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.mesa-blackjack {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+}

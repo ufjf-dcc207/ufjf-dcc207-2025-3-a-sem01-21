@@ -1,0 +1,18 @@
+.mesa-blackjack {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.botao-controle {
+    display: inline;
+    padding: 10px 20px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
