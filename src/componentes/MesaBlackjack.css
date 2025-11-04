@@ -81,6 +81,13 @@
     transform: rotate(180deg);
 }
 
+.valor-bj {
+    font-size: 16px;
+    color: red;
+    text-align: center;
+    margin-top: 5px;
+}
+
 .naipe-cartas {
     font-size: 40px;
     text-align: center;
@@ -95,5 +102,11 @@
     border-radius: 5px;
     font-weight: bold;
     cursor: not-allowed;
-    opacity: 0.7;
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.botao-controle:hover {
+    background-color: darkgoldenrod;
+    color: white;
 }
