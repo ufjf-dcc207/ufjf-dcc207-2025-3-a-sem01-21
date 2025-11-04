@@ -1,5 +1,7 @@
 import "./MesaBlackjack.css"
 import Mao from "./Mao";
+import Jogador from "./Jogador";
+import Controles from "./Controles";
 
 function MesaBlackjack() {
 
@@ -16,12 +18,10 @@ function MesaBlackjack() {
         <div className="mesa-blackjack">
             <h2>Mesa de Blackjack(21)</h2>
             <Mao cartas={cartasDealer} titulo="Dealer"></Mao>/
-            <Mao cartas={cartasJogador} titulo="Jogador"></Mao>
+            <Jogador nome="Jogador" cartas={cartasJogador} />
 
-            <h3>cartas</h3> 
-            <button>pedir carta</button>
-            <button>parar</button>
-            <button>dobrar aposta</button>
+            <Controles titulo="Controles"/>
+
         </div>
     )
 }
