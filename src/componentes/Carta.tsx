@@ -1,4 +1,4 @@
-import "./Cartas.css"
+import "./Carta.css"
 interface CartaPadrao {
     naipe: string;
     valor: string; // As, rei, rainha, valete e números

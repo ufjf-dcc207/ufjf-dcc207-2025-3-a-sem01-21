@@ -1,4 +1,4 @@
-
+import "./Controles.css"
 interface ControlesProps {
     titulo: string;
 }
