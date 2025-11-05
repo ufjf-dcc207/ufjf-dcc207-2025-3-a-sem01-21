@@ -21,7 +21,6 @@ function getvalorDaCarta(valor: string): number {
 }
 
 function Carta({naipe, valor, face_para_cima = true}: CartaPadrao) {
-    const valorblackjack = getvalorDaCarta(valor);
     if (!face_para_cima)
         return <div className="carta para-baixo">verso da carta</div>;
 
@@ -31,7 +30,7 @@ function Carta({naipe, valor, face_para_cima = true}: CartaPadrao) {
             <div className="valor-carta valor-superior">{valor}</div>
             <div className="naipe-carta">
                 {naipe === 'Paus' && '♣'}
-                {naipe === 'Espada' && '♠'}
+                {naipe === 'Espadas' && '♠'}
                 {naipe === 'Ouros' && '♦'}
                 {naipe === 'Copas' && '♥'}
             </div>

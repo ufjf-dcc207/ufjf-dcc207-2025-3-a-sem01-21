@@ -6,9 +6,11 @@ const Controles = ({ titulo }: ControlesProps) => {
     return (
         <div className="controles">
             <h3>{titulo}</h3>
-            <button>Pedir Carta</button>
-            <button>Parar</button>
-            <button>Dobrar Aposta</button>
+            <div className="comandos">
+                <button className="botaocontrole">Pedir Carta</button>
+                <button className="botaocontrole">Parar</button>
+                <button className="botaocontrole">Dobrar Aposta</button>
+            </div>
         </div>
     );
 }
