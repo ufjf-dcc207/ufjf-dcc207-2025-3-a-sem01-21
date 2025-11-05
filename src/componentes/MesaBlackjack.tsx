@@ -2,6 +2,7 @@ import "./MesaBlackjack.css"
 import Mao from "./Mao";
 import Jogador from "./Jogador";
 import Controles from "./Controles";
+import Carta from "./Carta";
 
 function MesaBlackjack() {
 

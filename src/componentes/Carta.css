@@ -1,0 +1,70 @@
+.cartas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+  min-height: 160px;
+}
+
+.carta {
+  width: 100px;
+  height: 145px;
+  background: #fdfdfd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carta:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.carta-Copas,
+.carta-Ouros { color: #d90429; }
+.carta-Espadas,
+.carta-Paus { color: #1a1a1a; }
+
+.valor-superior {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  font-size: 1.8rem;
+}
+.valor-inferior {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  font-size: 1.8rem;
+  transform: rotate(180deg);
+}
+
+.naipe-carta {
+  font-size: 3.5rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.valor-bj {
+  position: absolute;
+  bottom: 6px;
+  left: 8px;
+  font-size: 0.85rem;
+  color: rgba(0,0,0,0.6);
+}
+
+.para-baixo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg,#222,#444);
+  color: white;
+}
+

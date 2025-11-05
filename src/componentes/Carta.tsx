@@ -1,8 +1,4 @@
-// TODO: ainda falta colocar os valores que cada carta representa no 21
-// os números é o valor deles mesmo
-// rei, rainha, valete tem valor 10
-// As pode valer 1 ou 11
-
+import "./Cartas.css"
 interface CartaPadrao {
     naipe: string;
     valor: string; // As, rei, rainha, valete e números
