@@ -1,0 +1,14 @@
+.mao {
+    margin: 30px 0;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.mao h3 {
+    color: gold;
+    margin-bottom: 15px;
+    font-size: 24px;
+    /* text-transform: uppercase; */
+    border-bottom: 2px solid rgba(255, 215, 0, 0.5);
+}

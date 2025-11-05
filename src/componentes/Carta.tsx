@@ -1,12 +1,19 @@
-// TODO: ainda falta colocar os valores que cada carta representa no 21
-// os números é o valor deles mesmo
-// rei, rainha, valete tem valor 10
-// As pode valer 1 ou 11
-
+import "./Carta.css"
 interface CartaPadrao {
     naipe: string;
     valor: string; // As, rei, rainha, valete e números
     face_para_cima?: boolean;
+    valorblackjack?: number;
+}
+
+function getvalorDaCarta(valor: string): number {
+    if (valor === 'A') {
+        return 11; //pode ser 1 ou 11
+    }
+    if (['K', 'Q', 'J'].includes(valor)) {
+        return 10;
+    }
+    return parseInt(valor);
 }
 
 function Carta({naipe, valor, face_para_cima = true}: CartaPadrao) {
@@ -19,7 +26,7 @@ function Carta({naipe, valor, face_para_cima = true}: CartaPadrao) {
             <div className="valor-carta valor-superior">{valor}</div>
             <div className="naipe-carta">
                 {naipe === 'Paus' && '♣'}
-                {naipe === 'Espada' && '♠'}
+                {naipe === 'Espadas' && '♠'}
                 {naipe === 'Ouros' && '♦'}
                 {naipe === 'Copas' && '♥'}
             </div>

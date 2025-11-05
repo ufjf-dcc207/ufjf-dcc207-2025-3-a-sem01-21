@@ -1,4 +1,5 @@
 import Carta from "./Carta";
+import "./Mao.css"
 
 interface MaoPadrao {
     cartas: Array<{naipe: string; valor: string}>;
