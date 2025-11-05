@@ -18,7 +18,7 @@ function MesaBlackjack() {
     return (
         <div className="mesa-blackjack">
             <h2>Sua Vez!</h2>
-            <Mao cartas={cartasDealer} titulo="Dealer"></Mao>/
+            <Mao cartas={cartasDealer} titulo="Dealer"></Mao>
             <Jogador nome="Jogador" cartas={cartasJogador} />
 
             <Controles titulo="Controles"/>
