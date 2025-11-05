@@ -18,12 +18,9 @@
   background-color: #1976d2;
   border: none;
   border-radius: 8px;
-  cursor: pointer;
+  cursor: auto;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
-  transition: all 0.18s ease;
-  pointer-events: auto;
 }
 
 .botao-saldo {
